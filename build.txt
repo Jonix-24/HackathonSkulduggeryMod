@@ -1,0 +1,3 @@
+displayName = Hackathon2025
+author = League of Extraordinary Gentlemen
+version = 0.1
