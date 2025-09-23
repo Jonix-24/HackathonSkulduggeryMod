@@ -2,15 +2,15 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MostEpicTerrariaMod.Content.Items
+namespace HackathonSkulduggeryMod.Content.Items
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
 	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
 	public class TestSword : ModItem
 	{
-		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.MostEpicTerrariaMod.hjson' file.
-		public override void SetDefaults()
+        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.HackathonSkulduggeryMod.hjson' file.
+        public override void SetDefaults()
 		{
 			Item.damage = 50;
 			Item.DamageType = DamageClass.Melee;
