@@ -2,7 +2,7 @@
 
 Items: {
 	TestSword: {
-		DisplayName: "Test Sword"
+		DisplayName: Test Sword
 		Tooltip:
 			'''
 			Template of an item
@@ -10,4 +10,19 @@ Items: {
 			It's snowing on Mt.Fuji
 			'''
 	}
+
+	VileBossBag: {
+		DisplayName: Vile Boss Bag
+		Tooltip: ""
+	}
+
+	VileSummonItem: {
+		DisplayName: Vile Summon Item
+		Tooltip: ""
+	}
+}
+
+NPCs: {
+	Lordofdarkness.DisplayName: Lordofdarkness
+	Hollow.DisplayName: Hollow
 }
