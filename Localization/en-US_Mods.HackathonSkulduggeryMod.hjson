@@ -64,4 +64,5 @@ NPCs: {
 Projectiles: {
 	SkullRevolverAmmoProjectile.DisplayName: Skull Revolver Ammo Projectile
 	CleaversProjectile.DisplayName: Cleavers Projectile
+	NecromancyProjectile.DisplayName: Necromancy Projectile
 }

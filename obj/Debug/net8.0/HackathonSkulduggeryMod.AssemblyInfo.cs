@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HackathonSkulduggeryMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+add39f2880d27afb244d19ce3ca17eea5c825669")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+395bd67130c02dd9f9d91b2c9f2bb61868835dbf")]
 [assembly: System.Reflection.AssemblyProductAttribute("HackathonSkulduggeryMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HackathonSkulduggeryMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

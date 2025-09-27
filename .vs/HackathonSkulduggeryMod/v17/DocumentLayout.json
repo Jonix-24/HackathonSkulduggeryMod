@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\",
+  "WorkspaceRootPath": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|c:\\users\\kristian fahr\\documents\\my games\\terraria\\tmodloader\\modsources\\hackathonskulduggerymod\\content\\items\\weapons\\testsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|c:\\users\\bib\\onedrive - bib \u0026 fhdw\\dokumente\\my games\\terraria\\tmodloader\\modsources\\hackathonskulduggerymod\\content\\bosses\\lordofdarkness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|solutionrelative:content\\bosses\\lordofdarkness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|c:\\users\\bib\\onedrive - bib \u0026 fhdw\\dokumente\\my games\\terraria\\tmodloader\\modsources\\hackathonskulduggerymod\\content\\items\\weapons\\testsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|solutionrelative:content\\items\\weapons\\testsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|c:\\users\\kristian fahr\\documents\\my games\\terraria\\tmodloader\\modsources\\hackathonskulduggerymod\\content\\items\\weapons\\skullrevolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\content\\items\\weapons\\skullrevolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|solutionrelative:content\\items\\weapons\\skullrevolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|c:\\users\\kristian fahr\\documents\\my games\\terraria\\tmodloader\\modsources\\hackathonskulduggerymod\\content\\projectiles\\skullrevolverammoprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\content\\projectiles\\skullrevolverammoprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|solutionrelative:content\\projectiles\\skullrevolverammoprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|c:\\users\\kristian fahr\\documents\\my games\\terraria\\tmodloader\\modsources\\hackathonskulduggerymod\\content\\items\\weapons\\skullrevolverammo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\content\\items\\weapons\\skullrevolverammo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC26745B-21AB-45BD-AD2F-8B1CEFFB90A0}|HackathonSkulduggeryMod.csproj|solutionrelative:content\\items\\weapons\\skullrevolverammo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,59 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SkullRevolverAmmoProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
-              "RelativeDocumentMoniker": "Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
-              "ToolTip": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
-              "RelativeToolTip": "Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
+              "DocumentIndex": 0,
+              "Title": "Lordofdarkness.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Bosses\\Lordofdarkness.cs",
+              "RelativeDocumentMoniker": "Content\\Bosses\\Lordofdarkness.cs",
+              "ToolTip": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Bosses\\Lordofdarkness.cs",
+              "RelativeToolTip": "Content\\Bosses\\Lordofdarkness.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T13:50:49.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SkullRevolverAmmo.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
+              "ToolTip": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
+              "RelativeToolTip": "Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:36:51.621Z",
+              "WhenOpened": "2025-09-27T08:36:06.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestSword.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\TestSword.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\TestSword.cs",
+              "ToolTip": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\TestSword.cs",
+              "RelativeToolTip": "Content\\Items\\Weapons\\TestSword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:58:16.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SkullRevolverAmmo.cs",
-              "DocumentMoniker": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
-              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
-              "ToolTip": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
-              "RelativeToolTip": "Content\\Items\\Weapons\\SkullRevolverAmmo.cs",
+              "Title": "SkullRevolverAmmoProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
+              "RelativeDocumentMoniker": "Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
+              "ToolTip": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
+              "RelativeToolTip": "Content\\Projectiles\\SkullRevolverAmmoProjectile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:36:06.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T08:36:51.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SkullRevolver.cs",
-              "DocumentMoniker": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolver.cs",
+              "DocumentMoniker": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolver.cs",
               "RelativeDocumentMoniker": "Content\\Items\\Weapons\\SkullRevolver.cs",
-              "ToolTip": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolver.cs",
+              "ToolTip": "C:\\Users\\bib\\OneDrive - bib \u0026 FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\SkullRevolver.cs",
               "RelativeToolTip": "Content\\Items\\Weapons\\SkullRevolver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:35:22.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestSword.cs",
-              "DocumentMoniker": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\TestSword.cs",
-              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\TestSword.cs",
-              "ToolTip": "C:\\Users\\Kristian Fahr\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\Content\\Items\\Weapons\\TestSword.cs",
-              "RelativeToolTip": "Content\\Items\\Weapons\\TestSword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:58:16.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T08:35:22.793Z"
             }
           ]
         }
