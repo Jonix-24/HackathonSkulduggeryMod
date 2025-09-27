@@ -113,7 +113,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LordVileBreast>(), 1));
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<VileBossBag>(), 1));
 
             //when hardmode
             if (Main.hardMode)
@@ -123,7 +123,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
             if(Main.expertMode)
             {
-                npcLoot.Add(ItemDropRule.BossBag(ModContent.ItemType<VileBossBag>()));
+                npcLoot.Add(ItemDropRule.BossBag(ModContent.ItemType<VileSummonItem>()));
             }
         }
 

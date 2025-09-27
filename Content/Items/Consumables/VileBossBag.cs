@@ -1,4 +1,6 @@
 ﻿using HackathonSkulduggeryMod.Content.Bosses;
+using HackathonSkulduggeryMod.Content.Items.Armor;
+using HackathonSkulduggeryMod.Content.Items.Weapons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,22 +42,26 @@ namespace HackathonSkulduggeryMod.Content.Items.Consumables
 
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
-            itemLoot.Add(ItemDropRule.Common(ItemID.TaxCollectorHat, 1));
+            itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<LordVileBreast>(), 1));
+            itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<SolomonsCane>(), 1));
 
             //when hardmode
             if (Main.hardMode)
             {
-                itemLoot.Add(ItemDropRule.Common(ItemID.Zenith, 1, 1, 100));
+                itemLoot.Add(ItemDropRule.Common(ItemID.NecromancerBanner, 10, 1, 2));
             }
 
             // add expert only items
-            itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosBreastplate, 10));
-            itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosMask, 10));
-            itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosLeggings, 10));
-            itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosWings, 10));
+            if (Main.hardMode)
+            {
+                itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosBreastplate, 10));
+                itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosMask, 10));
+                itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosLeggings, 10));
+                itemLoot.Add(ItemDropRule.NotScalingWithLuck(ItemID.CrownosWings, 10));
+            }
 
             //Money
-            itemLoot.Add(ItemDropRule.CoinsBasedOnNPCValue(ModContent.NPCType<Lordofdarkness>()));
+            itemLoot.Add(ItemDropRule.Coins(2611112, true));
         }
     }
 }
