@@ -50,6 +50,11 @@ Items: {
 		DisplayName: Solomons Cane
 		Tooltip: Solomon was one of the most influential necromancers. The shadows are drawn to his cane like moths to light
 	}
+
+	ShuddersRage: {
+		DisplayName: Shudders Rage
+		Tooltip: ""
+	}
 }
 
 NPCs: {
@@ -84,4 +89,12 @@ Projectiles: {
 	NecromancyProjectile.DisplayName: Necromancy Projectile
 	ShadowLashProjectile.DisplayName: Shadow Lash Projectile
 	SolomonsProjectile.DisplayName: Solomons Projectile
+	Gist.DisplayName: Gist
+}
+
+Buffs: {
+	GistBuff: {
+		DisplayName: Gist Buff
+		Description: Mods.HackathonSkulduggeryMod.Buffs.GistBuff.Description
+	}
 }
