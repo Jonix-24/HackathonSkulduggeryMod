@@ -20,10 +20,35 @@ Items: {
 		DisplayName: Vile Summon Item
 		Tooltip: ""
 	}
+
+	CleaversScythe: {
+		Tooltip: ""
+		DisplayName: Cleavers Scythe
+	}
 }
 
 NPCs: {
 	Lordofdarkness.DisplayName: Lordofdarkness
 	Hollow.DisplayName: Hollow
 	restant.DisplayName: restant
+
+	Detective: {
+		TownNPCMood: {
+			DislikeCrowded: I dislike how crowded I am.
+			LoveSpace: I love having so much space.
+			FarFromHome: I am too far from home.
+			NoHome: I hate not having a home.
+			Content: I am content.
+			HateCrowded: I hate how crowded I am.
+			LikeBiome: I like {BiomeName}.
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+
+		DisplayName: Detective
+	}
 }
+
+Projectiles.CleaversProjectile.DisplayName: Cleavers Projectile
