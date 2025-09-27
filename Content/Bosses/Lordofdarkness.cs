@@ -123,7 +123,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
             if(Main.expertMode)
             {
-                npcLoot.Add(ItemDropRule.BossBag(ModContent.ItemType<VileSummonItem>()));
+                npcLoot.Add(ItemDropRule.BossBag(ModContent.ItemType<SkulduggerysSuitcase>()));
             }
         }
 

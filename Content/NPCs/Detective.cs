@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-
+using HackathonSkulduggeryMod.Common.Systems;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
@@ -31,12 +31,14 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
+using System.Media;
 
 namespace HackathonSkulduggeryMod.Content.NPCs
 {
     [AutoloadHead]
     public class Detective : ModNPC
-    {   
+    {
+        public bool sold = BossDownedSystem.downedVile;
         public const string ShopName = "Shop";
         
         public override void SetStaticDefaults()
@@ -113,11 +115,20 @@ namespace HackathonSkulduggeryMod.Content.NPCs
 
        public override void SetChatButtons(ref string button, ref string button2) { // What the chat buttons are when you open up the chat UI
 			button = Language.GetTextValue("LegacyInterface.28");
-			button2 = " ";
-			if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()) ) {
-				button2 = "Vile?";
-			}
-		}
+			
+            if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Armor.LordVileBreast>()))
+            { button2 = "Vile?"; }
+
+            else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Consumables.SkulduggerysSuitcase>()))
+            {
+                button2 = "Vile?";
+            }
+            else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()))
+            {
+                button2 = "Cleavers?";
+            }
+            else { button2 = "Sparrows?"; }
+        }
 
 		public override void OnChatButtonClicked(bool firstButton, ref string shop) {
 			if (firstButton) {
@@ -129,7 +140,9 @@ namespace HackathonSkulduggeryMod.Content.NPCs
 			}
             else
             {
-                if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Consumables.VileSummonItem>()))
+                if (Main.LocalPlayer.HasItem(ModContent.ItemType <Content.Items.Armor.LordVileBreast>()))
+                {Main.npcChatText = "You defeated Vile! Well atleast you measured up to my unconscious"}
+                else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Consumables.SkulduggerysSuitcase>()))
                 { Main.npcChatText = "Oh you found my suitcase. You want to know my nature? Look inside! It is a dark and twisted thing"; }
                 else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()))
                 {
@@ -139,7 +152,7 @@ namespace HackathonSkulduggeryMod.Content.NPCs
                 }
                 else
                 {
-                    Main.npcChatText = "This world is dangerous, turn back while you can or atleast wear something that suits you to spill your blood into";
+                    Main.npcChatText = "The Sparrow flies south for Winter";
                 }
                 
 
@@ -156,8 +169,8 @@ namespace HackathonSkulduggeryMod.Content.NPCs
                 .Add(new Item(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()))
                 .Add(new Item(ModContent.ItemType<Content.Items.Weapons.SkullRevolver>()));
 
-            if (true) //add a bool
-                    {npcShop.Add(new Item(ModContent.ItemType<Content.Items.Consumables.VileSummonItem>())); };
+            if (BossDownedSystem.downedVile) //add a bool
+                    {npcShop.Add(new Item(ModContent.ItemType<Content.Items.Consumables.SkulduggerysSuitcase>())); };
 
             //.Add(new Item(ModContent.ItemType<Content.Items.CleaversScythe>(Condition.DownedEyeOfCthulhu)) { shopCustomPrice = Item.buyPrice(platinum: 5) });
 

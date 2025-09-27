@@ -12,7 +12,7 @@ using Terraria.Net;
 
 namespace HackathonSkulduggeryMod.Content.Items.Consumables
 {
-    public class VileSummonItem : ModItem
+    public class SkulduggerysSuitcase : ModItem
     {
         public override void SetStaticDefaults()
         {
