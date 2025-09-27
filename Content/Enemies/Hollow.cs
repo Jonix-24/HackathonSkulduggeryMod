@@ -18,6 +18,7 @@ namespace HackathonSkulduggeryMod.Content.Enemies
         public override void SetDefaults()
         {
             NPC.CloneDefaults(NPCID.Zombie);
+            AnimationType = 3;
             if (NPC.onFire)
             {
                 NPC.defense = 1;
