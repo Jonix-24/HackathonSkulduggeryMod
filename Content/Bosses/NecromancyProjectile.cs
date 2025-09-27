@@ -14,8 +14,8 @@ namespace HackathonSkulduggeryMod.Content.Bosses
     {
         public override void SetDefaults()
         {
-            Projectile.width = 32;
-            Projectile.height = 32;
+            Projectile.width = 24;
+            Projectile.height = 24;
 
             Projectile.aiStyle = 0;
             Projectile.DamageType = DamageClass.Magic;

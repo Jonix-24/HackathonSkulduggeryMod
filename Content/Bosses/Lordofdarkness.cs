@@ -1,13 +1,19 @@
 ﻿using HackathonSkulduggeryMod.Common.Systems;
+using HackathonSkulduggeryMod.Content.Items.Armor;
+using HackathonSkulduggeryMod.Content.Items.Consumables;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
+using Terraria.GameContent;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -69,11 +75,15 @@ namespace HackathonSkulduggeryMod.Content.Bosses
             NPC.height = 128;
 
             // Damage and Defense
-            NPC.damage = 32;
-            NPC.defense = 15;
+            NPC.damage = 100;
+            NPC.defense = 50;
 
             //Max HP
             NPC.lifeMax = 7500;
+            if (Main.hardMode)
+            {
+                NPC.lifeMax = 9000;
+            }
 
             //knockback resistance
             NPC.knockBackResist = 0f;
@@ -103,12 +113,17 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.Common(ItemID.TaxCollectorHat, 1));
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LordVileBreast>(), 1));
 
             //when hardmode
             if (Main.hardMode)
             {
                 npcLoot.Add(ItemDropRule.Common(ItemID.Zenith, 1, 1, 100));
+            }
+
+            if(Main.expertMode)
+            {
+                npcLoot.Add(ItemDropRule.BossBag(ModContent.ItemType<VileBossBag>()));
             }
         }
 
@@ -316,6 +331,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
                 //Move Towards Target
                 MoveToTarget(player, baseMoveSpeed, accelerationSpeed, out float distanceToPlayer);
+                NPC.spriteDirection = NPC.direction;
 
                 //increase state timer
                 stateTimer += 1f;
@@ -349,7 +365,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                     }
 
                     // handle projectile threshold
-                    float projThreshold = 120f;
+                    float projThreshold = 50f;
                     if (Main.expertMode)
                     {
                         projThreshold += 0.4f;
@@ -362,10 +378,10 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                         stateTimer2 = 0;
 
                         //set move speed
-                        float projSpeed = 7f;
+                        float projSpeed = 10f;
                         if (Main.expertMode) 
                         {
-                            projSpeed = 9f;
+                            projSpeed = 15f;
                         }
 
                         //calculate damage
@@ -378,7 +394,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                         }
 
                         //shoot projectile
-                        ShootProjectile(player, ModContent.ProjectileType<NecromancyProjectile>(), projSpeed, projDmg, projKnockback);
+                        ShootProjectile(player, ModContent.ProjectileType<NecromancyProjectile>(), projSpeed, projDmg, projKnockback, 3);
                     }
                 }
             }
@@ -404,7 +420,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                 Microsoft.Xna.Framework.Vector2 velocity = new Microsoft.Xna.Framework.Vector2(deltaX, deltaY) * movementSpeed;
 
                 // apply velocity to npc
-                NPC.velocity = velocity;
+                NPC.velocity = velocity * 2;
 
                 //move to post charge state
                 subState = 2;
@@ -531,33 +547,40 @@ namespace HackathonSkulduggeryMod.Content.Bosses
             }
         }
 
-        private void ShootProjectile(Player player, int type, float speed, int damage, float knockback)
+        private void ShootProjectile(Player player, int type, float speed, int damage, float knockback, int number)
         {
-            //get Target position
-            Microsoft.Xna.Framework.Vector2 projTarget = new(player.Center.X - NPC.Center.X, player.Center.Y - NPC.Center.Y);
-            float projDistance = (float)(projTarget.X * projTarget.X - projTarget.Y * projTarget.Y);
-            float projTargetDistance = speed / projDistance;
-
-            //set velocity
-            Microsoft.Xna.Framework.Vector2 projVelocity = projTarget * projTargetDistance;
-            
-            // get spawn position
-            Microsoft.Xna.Framework.Vector2 projSpawn = NPC.Center + projVelocity * 10f;
-        
-            // handle network
-            if(Main.netMode != NetmodeID.MultiplayerClient)
+            for (int i = 0; i < type; i++)
             {
-                int projectileID = Projectile.NewProjectile(NPC.GetSource_FromAI(), projSpawn, projVelocity, type, damage, knockback);
+                float randomize = Main.rand.Next(1, 10);
 
-                if(Main.netMode == NetmodeID.Server && projectileID < 200) 
+                //get Target position
+                Microsoft.Xna.Framework.Vector2 projTarget = new(player.Center.X - NPC.Center.X, player.Center.Y - NPC.Center.Y);
+                float projDistance = (float)(projTarget.X * projTarget.X - projTarget.Y * projTarget.Y);
+                float projTargetDistance = speed / projDistance;
+
+                //set velocity
+                Microsoft.Xna.Framework.Vector2 projVelocity = (projTarget * projTargetDistance);
+
+                // get spawn position
+                Microsoft.Xna.Framework.Vector2 projSpawn = NPC.Center + projVelocity * 10f;
+
+                // handle network
+                if (Main.netMode != NetmodeID.MultiplayerClient)
                 {
-                    NetMessage.SendData(MessageID.SyncNPC, -1, -1, null, projectileID);
+                    int projectileID = Projectile.NewProjectile(NPC.GetSource_FromAI(), projSpawn, projVelocity, type, damage, knockback);
+
+                    if (Main.netMode == NetmodeID.Server && projectileID < 200)
+                    {
+                        NetMessage.SendData(MessageID.SyncNPC, -1, -1, null, projectileID);
+                    }
                 }
             }
         }
 
         public override void FindFrame(int frameHeight)
         {
+            NPC.spriteDirection = NPC.direction;
+
             //first phase
             int startframe = 0;
             int endframe = 3;
