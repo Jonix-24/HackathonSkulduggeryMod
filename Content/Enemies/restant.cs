@@ -4,6 +4,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
+using HackathonSkulduggeryMod.Content.Projectiles;
 
 namespace HackathonSkulduggeryMod.Content.Enemies
 {
@@ -27,7 +28,8 @@ namespace HackathonSkulduggeryMod.Content.Enemies
             NPC.CloneDefaults(2);
             AIType = 2;
             AnimationType = 2;
-            NPC.alpha = 100;
+            NPC.alpha = 25;
+            
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
@@ -47,6 +49,18 @@ namespace HackathonSkulduggeryMod.Content.Enemies
             {
                 new FlavorTextBestiaryInfoElement("kekw")
             });
+        }
+
+        public override void OnHitPlayer(Player target, Player.HurtInfo hurtInfo)
+        {
+            // Here we can make things happen if this NPC hits a player via its hitbox (not projectiles it shoots, this is handled in the projectile code usually)
+            // Common use is applying buffs/debuffs:
+
+            
+            // Alternatively, you can use a vanilla buff: int buffType = BuffID.Slow;
+
+            int timeToAdd = 5 * 60; // This makes it 5 seconds, one second is 60 ticks
+            target.AddBuff(31, timeToAdd);
         }
 
 
