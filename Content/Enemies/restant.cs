@@ -27,6 +27,7 @@ namespace HackathonSkulduggeryMod.Content.Enemies
             NPC.CloneDefaults(2);
             AIType = 2;
             AnimationType = 2;
+            NPC.alpha = 100;
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
