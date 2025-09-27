@@ -20,6 +20,16 @@ Items: {
 		DisplayName: Vile Summon Item
 		Tooltip: ""
 	}
+
+	SkullRevolver: {
+		DisplayName: Skull Revolver
+		Tooltip: ""
+	}
+
+	SkullRevolverAmmo: {
+		DisplayName: Skull Revolver Ammo
+		Tooltip: ""
+	}
 }
 
 NPCs: {
@@ -27,3 +37,5 @@ NPCs: {
 	Hollow.DisplayName: Hollow
 	restant.DisplayName: restant
 }
+
+Projectiles.SkullRevolverAmmoProjectile.DisplayName: Skull Revolver Ammo Projectile
