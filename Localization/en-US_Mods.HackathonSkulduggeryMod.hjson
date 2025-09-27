@@ -35,6 +35,21 @@ Items: {
 		Tooltip: ""
 		DisplayName: Cleavers Scythe
 	}
+
+	LordVileBreast: {
+		DisplayName: Lord Vile Breast
+		Tooltip: ""
+	}
+
+	ShadowSickle: {
+		DisplayName: Shadow Sickle
+		Tooltip: ""
+	}
+
+	SolomonsCane: {
+		DisplayName: Solomons Cane
+		Tooltip: ""
+	}
 }
 
 NPCs: {
@@ -65,4 +80,6 @@ Projectiles: {
 	SkullRevolverAmmoProjectile.DisplayName: Skull Revolver Ammo Projectile
 	CleaversProjectile.DisplayName: Cleavers Projectile
 	NecromancyProjectile.DisplayName: Necromancy Projectile
+	ShadowLashProjectile.DisplayName: Shadow Lash Projectile
+	SolomonsProjectile.DisplayName: Solomons Projectile
 }

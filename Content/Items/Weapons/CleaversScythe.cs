@@ -10,9 +10,9 @@ using HackathonSkulduggeryMod.Content.Projectiles;
 
 
 namespace HackathonSkulduggeryMod.Content.Items.Weapons
-{ 
-	
-	
+{
+
+
 	public class CleaversScythe : ModItem
 	{
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.WeaponTest.hjson' file.
@@ -35,14 +35,21 @@ namespace HackathonSkulduggeryMod.Content.Items.Weapons
 			Item.shootSpeed = 8f;
 			Item.holdStyle = ItemHoldStyleID.HoldGuitar;
 			Item.ChangePlayerDirectionOnShoot = true;
-			
+
 
 		}
 
-		
-	}	
+		public override void AddRecipes()
+		{
+			CreateRecipe()
+				.AddIngredient(ItemID.DeathSickle)
+				.AddIngredient(ItemID.GoldBar, 10)
+				.AddTile(TileID.MythrilAnvil)
+				.Register();
+		}
 
-	
+
+	}
 }
 
 

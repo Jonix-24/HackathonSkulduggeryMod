@@ -46,7 +46,7 @@ namespace HackathonSkulduggeryMod.Content.NPCs
         }
         public override void SetDefaults()
         {
-           
+            
             NPC.townNPC = true;
             NPC.friendly = true;
             NPC.width = 20;
@@ -152,9 +152,13 @@ namespace HackathonSkulduggeryMod.Content.NPCs
                 .Add(new Item(ItemID.Revolver))
                 .Add(new Item(ItemID.Boulder))
                 .Add(new Item(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()));
-                
-                //.Add(new Item(ModContent.ItemType<Content.Items.CleaversScythe>(Condition.DownedEyeOfCthulhu)) { shopCustomPrice = Item.buyPrice(platinum: 5) });
-            
+
+
+                if(true) //add a bool
+                    {npcShop.Add(new Item(ModContent.ItemType<Content.Items.Consumables.VileSummonItem>())); };
+
+            //.Add(new Item(ModContent.ItemType<Content.Items.CleaversScythe>(Condition.DownedEyeOfCthulhu)) { shopCustomPrice = Item.buyPrice(platinum: 5) });
+
             npcShop.Register(); // Name of this shop tab
 		}
 
@@ -208,7 +212,7 @@ namespace HackathonSkulduggeryMod.Content.NPCs
 
         public override void TownNPCAttackProj(ref int projType, ref int attackDelay)
         {
-            projType = ProjectileID.Fireball;
+            projType = ProjectileID.CursedFlameFriendly;
             attackDelay = 1;
         }
 
