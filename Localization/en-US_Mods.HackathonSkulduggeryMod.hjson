@@ -61,8 +61,7 @@ NPCs: {
 	}
 }
 
-<<<<<<< HEAD
-Projectiles.SkullRevolverAmmoProjectile.DisplayName: Skull Revolver Ammo Projectile
-=======
-Projectiles.CleaversProjectile.DisplayName: Cleavers Projectile
->>>>>>> 619374bd0a789459338eb93609b828c236ee6410
+Projectiles: {
+	SkullRevolverAmmoProjectile.DisplayName: Skull Revolver Ammo Projectile
+	CleaversProjectile.DisplayName: Cleavers Projectile
+}
