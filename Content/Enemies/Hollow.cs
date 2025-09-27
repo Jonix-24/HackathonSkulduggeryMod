@@ -11,6 +11,10 @@ namespace HackathonSkulduggeryMod.Content.Enemies
 {
     internal class Hollow : ModNPC
     {
+        public override void SetStaticDefaults()
+        {
+            Main.npcFrameCount[Type] = 3;
+        }
         public override void SetDefaults()
         {
             NPC.CloneDefaults(NPCID.Zombie);
