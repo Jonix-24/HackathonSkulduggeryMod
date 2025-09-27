@@ -168,13 +168,13 @@ namespace HackathonSkulduggeryMod.Content.Bosses
             //Move Toards Player
             if(subState == 0)
             {
-                float baseMoveSpeed = 5f;
+                float baseMoveSpeed = 8f;
                 float accelerationSpeed = 0.04f;
 
                 // Expert Mode Adjustment
                 if(Main.expertMode)
                 {
-                    baseMoveSpeed = 7f;
+                    baseMoveSpeed = 10f;
                     accelerationSpeed = 0.15f;
                 }
 
@@ -186,7 +186,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
                 //check if change substate
 
-                float threshold = 600f;
+                float threshold = 300f;
 
                 if (Main.expertMode)
                 {
@@ -202,15 +202,57 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                     NPC.netUpdate = true;
                     return;
                 }
+
+                if (NPC.position.Y + NPC.height < player.Center.Y && distanceToPlayer < 500f)
+                {
+                    // increase secondary timer
+                    if (!player.dead)
+                    {
+                        stateTimer2 += 1f;
+                    }
+
+                    // handle projectile threshold
+                    float projThreshold = 50f;
+                    if (Main.expertMode)
+                    {
+                        projThreshold += 0.4f;
+                    }
+
+                    // handle shooting projectile
+                    if (stateTimer2 >= projThreshold)
+                    {
+                        //reset timer
+                        stateTimer2 = 0;
+
+                        //set move speed
+                        float projSpeed = 13f;
+                        if (Main.expertMode)
+                        {
+                            projSpeed = 17f;
+                        }
+
+                        //calculate damage
+                        int projDmg = (int)(NPC.damage * 0.5f);
+                        float projKnockback = 3f;
+                        if (Main.expertMode)
+                        {
+                            projDmg += (int)(NPC.damage * .15);
+                            projKnockback += .5f;
+                        }
+
+                        //shoot projectile
+                        ShootProjectile(player, ModContent.ProjectileType<NecromancyProjectile>(), projSpeed, projDmg, projKnockback, 1);
+                    }
+                }
             }
             // charge at player
             else if (subState == 1)
             {
                 //setub speed
-                float basespeed = 6f;
+                float basespeed = 10f;
                 if (Main.expertMode)
                 {
-                    basespeed = 7f;
+                    basespeed = 12f;
                 }
 
                 //hanlde charge velocity
@@ -225,7 +267,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                 Microsoft.Xna.Framework.Vector2 velocity = new Microsoft.Xna.Framework.Vector2(deltaX, deltaY) * movementSpeed;
 
                 // apply velocity to npc
-                NPC.velocity = velocity;
+                NPC.velocity = velocity * 2;
 
                 //move to post charge state
                 subState = 2;
@@ -319,14 +361,14 @@ namespace HackathonSkulduggeryMod.Content.Bosses
             //Move Toards Player
             if (subState == 0)
             {
-                float baseMoveSpeed = 8f;
-                float accelerationSpeed = 0.1f;
+                float baseMoveSpeed = 10f;
+                float accelerationSpeed = 0.2f;
 
                 // Expert Mode Adjustment
                 if (Main.expertMode)
                 {
-                    baseMoveSpeed = 9f;
-                    accelerationSpeed = 0.25f;
+                    baseMoveSpeed = 12f;
+                    accelerationSpeed = 0.35f;
                 }
 
                 //Move Towards Target
@@ -338,7 +380,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
 
                 //check if change substate
 
-                float threshold = 400f;
+                float threshold = 200f;
 
                 if (Main.expertMode)
                 {
@@ -365,7 +407,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                     }
 
                     // handle projectile threshold
-                    float projThreshold = 50f;
+                    float projThreshold = 30f;
                     if (Main.expertMode)
                     {
                         projThreshold += 0.4f;
@@ -378,14 +420,14 @@ namespace HackathonSkulduggeryMod.Content.Bosses
                         stateTimer2 = 0;
 
                         //set move speed
-                        float projSpeed = 10f;
+                        float projSpeed = 20f;
                         if (Main.expertMode) 
                         {
-                            projSpeed = 15f;
+                            projSpeed = 25f;
                         }
 
                         //calculate damage
-                        int projDmg = (int)(NPC.damage * 0.5f);
+                        int projDmg = (int)(NPC.damage * 0.8f);
                         float projKnockback = 3f;
                         if (Main.expertMode)
                         {
