@@ -337,7 +337,7 @@ namespace HackathonSkulduggeryMod.Content.Bosses
             }
 
             //check 2nd state switch
-            float lowHealthThreshold = 0.35f;
+            float lowHealthThreshold = 0.5f;
             if((float)NPC.life < (float)NPC.lifeMax * lowHealthThreshold)
             {
                 //go to 2nd state
