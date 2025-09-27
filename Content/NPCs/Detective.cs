@@ -129,8 +129,10 @@ namespace HackathonSkulduggeryMod.Content.NPCs
 			}
             else
             {
-                
-                if(Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>())){
+                if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Consumables.VileSummonItem>()))
+                { Main.npcChatText = "Oh you found my suitcase. You want to know my nature? Look inside! It is a dark and twisted thing"; }
+                else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()))
+                {
 
                     Main.npcChatText = "You have met a Cleaver? They were on out side ages ago. We should have appreciated them more";
 
@@ -151,10 +153,10 @@ namespace HackathonSkulduggeryMod.Content.NPCs
 
                 .Add(new Item(ItemID.Revolver))
                 .Add(new Item(ItemID.Boulder))
-                .Add(new Item(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()));
+                .Add(new Item(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()))
+                .Add(new Item(ModContent.ItemType<Content.Items.Weapons.SkullRevolver>()));
 
-
-                if(true) //add a bool
+            if (true) //add a bool
                     {npcShop.Add(new Item(ModContent.ItemType<Content.Items.Consumables.VileSummonItem>())); };
 
             //.Add(new Item(ModContent.ItemType<Content.Items.CleaversScythe>(Condition.DownedEyeOfCthulhu)) { shopCustomPrice = Item.buyPrice(platinum: 5) });

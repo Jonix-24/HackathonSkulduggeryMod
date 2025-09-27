@@ -23,32 +23,32 @@ Items: {
 
 	SkullRevolver: {
 		DisplayName: Skull Revolver
-		Tooltip: ""
+		Tooltip: " A good .38 Smith and Wesson revolver. It will do you a good service against everything from mortals to gods "
 	}
 
 	SkullRevolverAmmo: {
 		DisplayName: Skull Revolver Ammo
-		Tooltip: ""
+		Tooltip: Bullets you know
 	}
 
 	CleaversScythe: {
-		Tooltip: ""
+		Tooltip: The Weapon of a Cleaver. You should handle it with great care
 		DisplayName: Cleavers Scythe
 	}
 
 	LordVileBreast: {
 		DisplayName: Lord Vile Breast
-		Tooltip: ""
+		Tooltip: Skulduggery Pleasant walked off the battlefield, and Lord Vile walked into the necromancer's temple.
 	}
 
 	ShadowSickle: {
 		DisplayName: Shadow Sickle
-		Tooltip: ""
+		Tooltip: What if a Ripper joined the Necromancers? He might use a weapon like this
 	}
 
 	SolomonsCane: {
 		DisplayName: Solomons Cane
-		Tooltip: ""
+		Tooltip: Solomon was one of the most influential necromancers. The shadows are drawn to his cane like moths to light
 	}
 }
 
@@ -59,21 +59,23 @@ NPCs: {
 
 	Detective: {
 		TownNPCMood: {
-			DislikeCrowded: I dislike how crowded I am.
-			LoveSpace: I love having so much space.
-			FarFromHome: I am too far from home.
+			DislikeCrowded: These are too many people, I dislike that.
+			LoveSpace: After a few hundred years you really learn to appreciate having this much space.
+			FarFromHome: Currently searching for a suspect, maybe I should head back though.
 			NoHome: I hate not having a home.
-			Content: I am content.
+			Content: Until the End.
 			HateCrowded: I hate how crowded I am.
 			LikeBiome: I like {BiomeName}.
 			LikeNPC: I like {NPCName}.
-			DislikeNPC: I dislike {NPCName}.
+			DislikeNPC: I dislike this Clothier, luckily i still got some suits left from Ghastly.
 			LikeNPC_Princess: I like {NPCName}.
 			Princess_LovesNPC: I like {NPCName}.
 		}
 
 		DisplayName: Detective
 	}
+
+	Solomon.DisplayName: Solomon
 }
 
 Projectiles: {

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\bib\\.nuget\\packages\\": {}
+    "C:\\Users\\Linus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bib\\OneDrive - bib & FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\HackathonSkulduggeryMod.csproj",
+      "projectUniqueName": "C:\\Users\\Linus\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\HackathonSkulduggeryMod.csproj",
       "projectName": "HackathonSkulduggeryMod",
-      "projectPath": "C:\\Users\\bib\\OneDrive - bib & FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\HackathonSkulduggeryMod.csproj",
-      "packagesPath": "C:\\Users\\bib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bib\\OneDrive - bib & FHDW\\Dokumente\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\obj\\",
+      "projectPath": "C:\\Users\\Linus\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\HackathonSkulduggeryMod.csproj",
+      "packagesPath": "C:\\Users\\Linus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Linus\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\HackathonSkulduggeryMod\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Linus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -45,7 +45,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -66,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
