@@ -141,7 +141,7 @@ namespace HackathonSkulduggeryMod.Content.NPCs
             else
             {
                 if (Main.LocalPlayer.HasItem(ModContent.ItemType <Content.Items.Armor.LordVileBreast>()))
-                {Main.npcChatText = "You defeated Vile! Well atleast you measured up to my unconscious"}
+                { Main.npcChatText = "You defeated Vile! Well atleast you measured up to my unconscious"; }
                 else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Consumables.SkulduggerysSuitcase>()))
                 { Main.npcChatText = "Oh you found my suitcase. You want to know my nature? Look inside! It is a dark and twisted thing"; }
                 else if (Main.LocalPlayer.HasItem(ModContent.ItemType<Content.Items.Weapons.CleaversScythe>()))

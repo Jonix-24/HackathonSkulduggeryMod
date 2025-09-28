@@ -55,6 +55,11 @@ Items: {
 		DisplayName: Shudders Rage
 		Tooltip: ""
 	}
+
+	SkulduggerysSuitcase: {
+		DisplayName: Skulduggerys Suitcase
+		Tooltip: ""
+	}
 }
 
 NPCs: {
