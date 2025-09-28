@@ -9,7 +9,7 @@ namespace HackathonSkulduggeryMod.Content.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            Main.projFrames[Projectile.type] = 4;
+            Main.projFrames[Projectile.type] = 1;
 
             ProjectileID.Sets.MinionTargettingFeature[Projectile.type] = true;
 
@@ -21,8 +21,8 @@ namespace HackathonSkulduggeryMod.Content.Projectiles
 
         public override void SetDefaults()
         {
-            Projectile.width = 30;
-            Projectile.height = 24;
+            Projectile.width = 26;
+            Projectile.height = 50;
             Projectile.netImportant = true;
             Projectile.friendly = true;
             Projectile.ignoreWater = true;
@@ -35,7 +35,7 @@ namespace HackathonSkulduggeryMod.Content.Projectiles
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 6;
             Projectile.DamageType = DamageClass.Summon;
-            Projectile.aiStyle = 41;
+            Projectile.aiStyle = 54;
         }
 
         public override bool? CanCutTiles()
